@@ -1,0 +1,16 @@
+[package]
+name = "efm32hg309f64"
+version = "0.1.0"
+authors = ["Mathias Svensson <freaken@freaken.dk>"]
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.0"
+
+[features]
+rt = ["cortex-m-rt/device"]

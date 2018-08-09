@@ -124,6 +124,7 @@ macro_rules! interrupt {
     };
 }
 #[doc = r" Enumeration of all the interrupts"]
+#[derive(Copy, Clone)]
 pub enum Interrupt {
     #[doc = "0 - DMA"]
     DMA,
